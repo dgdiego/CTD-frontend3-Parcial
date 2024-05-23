@@ -1,7 +1,9 @@
 
-const Card = () => {
+const Card = ({user}) => {
   return (
-    <div>Hola, soy una tarjeta</div>
+    <div>
+      <p>Hola <span style={{fontWeight:"bold"}}>{user.nombre}</span>! Sabemos que tu comida favorita es <span style={{fontWeight:"bold"}}>{user.comida}</span> y tu postre <span style={{fontWeight:"bold"}}>{user.postre}</span>.</p>
+    </div>
   )
 }
 
